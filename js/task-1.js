@@ -1,8 +1,6 @@
 "use strict";
 
-import users from "./users";
-
-users[{}];
+import users from "./users.js";
 
 const getUserNames = users.map(user => user.name);
 

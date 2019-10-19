@@ -1,5 +1,7 @@
 "use strict";
 
+import users from "./users.js";
+
 const getUsersWithFriend = (users, friendName) =>
   users
     .filter(user => user.friends.includes(friendName))

@@ -1,5 +1,6 @@
 "use strict";
 
+import users from "./users.js";
 
 const getUsersWithEyeColor = (users, eyeColor) =>
   users.filter(user => user.eyeColor === eyeColor);

@@ -1,5 +1,7 @@
 "use strict";
 
+import users from "./users.js";
+
 const getSortedUniqueSkills = users =>
   users
     .reduce((allSkills, user) => {
