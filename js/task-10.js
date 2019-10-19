@@ -4,12 +4,9 @@ import users from "./users.js";
 
 const getSortedUniqueSkills = users =>
   users
-    .reduce((allSkills, user) => {
-      allSkills.push(...user.skills);
-      return allSkills;
-    }, [])
+    .reduce((allSkills, user) => [...allSkills, ...user.skills], [])
     .filter((user, index, arr) => arr.indexOf(user) === index)
-    .sort();
+    .sort((a, b) => a.localeCompare(b, 'en'));
 console.log(getSortedUniqueSkills(users));
 
 // Получить массив всех умений всех пользователей (поле skills),
