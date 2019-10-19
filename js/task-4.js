@@ -1,0 +1,8 @@
+"use strict";
+
+const getInactiveUsers = users.filter(user => !user.isActive);
+
+console.log(getInactiveUsers);
+// [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]
+
+// Получить массив только неактивных пользователей (поле isActive).
